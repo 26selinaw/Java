@@ -33,5 +33,11 @@ Push the commit to the Github
 git push origin master
 ```
 
+Check history
+
+```shell
+git log
+```
+
 
 
