@@ -39,5 +39,11 @@ Check history
 git log
 ```
 
+## Useful commands
+
+1. pwd check which folder
+2. cd move to different foler
+3. ls ls -all list of all the items in a folder
+4. rm remove
 
 
