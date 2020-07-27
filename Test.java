@@ -8,6 +8,7 @@ public class Test {
             temp = s.substring(i, i + 1); 
             if (!(temp.equals(BLANK)))
                 str += temp;
+                System.out.println ("hi");
         }
         return str;
     }
