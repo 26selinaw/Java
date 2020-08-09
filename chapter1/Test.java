@@ -1,5 +1,5 @@
 public class Test {
-    public static String doSomething(String s) 
+    /* public static String doSomething(String s) 
     {
         final String BLANK = " "; //BLANK contains a single space String str = ""; //empty string
         String temp;
@@ -11,5 +11,10 @@ public class Test {
                 System.out.println ("hi");
         }
         return str;
+    } */
+    public static double getInterestRate() {
+        System.out.println("Enter interest rate for bank account"); 
+        System.out.println("Enter in decimal form:");
+        intRate = IO.readDouble(); // read user input return intRate;
     }
 }
