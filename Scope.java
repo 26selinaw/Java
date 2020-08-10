@@ -1,10 +1,8 @@
-package com.selina
 public class Scope 
 {
     public static void doSomething() 
     {
         int count = 0; 
-            ...
         //code to do something - no screen output produced
         count++; 
     }
