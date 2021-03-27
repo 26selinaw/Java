@@ -2,10 +2,16 @@
 
 ## Github
 
+Change to desktop
+
+```shell
+cd Desktop
+```
+
 Clone the code
 
 ```shell
-git clone https://github.com/SelinaWang102/Java.git
+git clone https://github.com/26selinaw/Java.git
 cd Java
 ```
 
