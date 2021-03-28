@@ -39,7 +39,7 @@ public class ListsArrays {
         System.out.println(l1);
 
         for (String name : l1) {
-            System.out.printf("Sunnyvale Resident: %s\n", name);
+            System.out.printf(" Sunnyvale Resident: %s\n", name);
         }
 
 
