@@ -42,7 +42,6 @@ public class ListsArrays {
             System.out.printf(" Sunnyvale Resident: %s\n", name);
         }
 
-
     }
     
 }
