@@ -52,4 +52,38 @@ git log
 3. ls ls -all list of all the items in a folder
 4. rm remove
 
+3/27
+
+Add entry point
+
+```shell
+add breakpoint
+```
+Java Lists
+
+Import lists package
+
+```shell
+import java.util.List;
+import java.util.ArrayList;
+```
+Java List Format
+
+```shell
+NameOfList <ListType> name = new NameOfList <ListType> ();
+name.add ("listcontent");
+
+* for loop
+for (ListType : name){
+    System.out.printf ("Repeated Content %s /n", name);
+}
+```
+
+Python List Format
+
+```shell
+ListName = ["ListContent"]
+print(ListName)
+```
+
 
