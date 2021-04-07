@@ -11,5 +11,6 @@ if a==1 or a == -1:
     print '( x +',f1,')( x +',f2,')'
 if a==0:
     print 'This is not a Quadratic Equation.'
-if a < -1:
-    pass
+if a < -1 or a > 1:
+    print 'This is not compatible with the source'
+    
