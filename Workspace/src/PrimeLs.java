@@ -4,12 +4,12 @@ public class PrimeLs {
     public static void main(String args[]){    
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the minimum: ");
-        int x = input.nextInt();   
+        long x = input.nextLong();
         System.out.print("Enter the maximum: ");
-        int y = input.nextInt();   
-        List<Integer> list=new ArrayList<Integer>();
+        long y = input.nextLong();
+        List<Long> list=new ArrayList<Long>();
         while (x<=y) {
-            for (int i = 2; i < x; i++) {
+            for (long i = 2; i < x; i++) {
                 if (x % i == 0) {
                     break;
                 }
@@ -19,8 +19,9 @@ public class PrimeLs {
             }
             x++;
         }
-        for (Integer primenumber:list) {
+        for (Long primenumber:list) {
             System.out.printf("%d\n",primenumber);
         }  
+        System.out.printf("The length of the list is %d", list.size());
     }  
 }
