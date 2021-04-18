@@ -8,6 +8,9 @@ public class PrimeLs {
         System.out.print("Enter the maximum: ");
         long y = input.nextLong();
         List<Long> list=new ArrayList<Long>();
+        if (x <= 2) {
+            list.add (2L);
+        }
         while (x<=y) {
             for (long i = 2; i < x; i++) {
                 if (x % i == 0) {
@@ -22,6 +25,6 @@ public class PrimeLs {
         for (Long primenumber:list) {
             System.out.printf("%d\n",primenumber);
         }  
-        System.out.printf("The length of the list is %d", list.size());
+        System.out.printf("The length of the list is %d\n", list.size());
     }  
 }
