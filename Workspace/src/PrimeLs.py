@@ -3,6 +3,8 @@ x = input()
 print('Enter the maximum: ')
 y = input()
 primelist = []
+if x <= 2:
+    primelist.append (2)
 while x<=y: 
     i=2
     while i < x:
