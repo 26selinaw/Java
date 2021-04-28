@@ -6,4 +6,4 @@ while i<y:
     x = flist[-2] + flist[-1]
     flist.append (x)
     i+=1
-print flist
+print x
