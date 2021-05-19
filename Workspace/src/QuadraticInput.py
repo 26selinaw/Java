@@ -1,5 +1,5 @@
 from fractions import Fraction
-a = input('Enter a:')
+a = input('Enter a in equation  )
 b = input('Enter b:')
 c = input('Enter c:')
 x1 = (-b - ((b*b-4*a*c) ** 0.5) )/2*a

@@ -1,9 +1,18 @@
-a1 = 3.0
-b1 = -4
-c1 = 17
-a2 = 1
-b2 = 2
-c2 = 1
+print 'Enter a in ax+by=c'
+a1 = input()
+print 'Enter b in ax+by=c'
+b1 = input() 
+print 'Enter c in ax+by=c'
+c1 = input()
+print 'Enter a2 in a2x+b2y=c2'
+a2 = input()
+print 'Enter b2 in a2x+b2y=c2'
+b2 = input()
+print 'Enter c2 in a2x+b2y=c2'
+c2 = input()
 y =((c1*a2)-(c2*a1))/((b1*a2)-(b2*a1))
 x =((c1*b2)-(c2*b1))/((a1*b2)-(a2*b1))
-print 'Equation 1:', a1,'x +', b1, 'y =', c1, 'Equation 2:', a2, 'x +', b2, 'y =',c2, ' x =', x, 'y =', y
+print 'Equation 1: '+ str(int(a1)) + 'x +' + str(b1) + 'y = ' + str(c1) 
+print 'Equation 2: ' + str(a2) + 'x +'+ str(b2) + 'y = ' + str(c2)
+print 'x =' + str(x)
+print 'y =' + str(y)

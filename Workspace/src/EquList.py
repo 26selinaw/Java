@@ -1,4 +1,3 @@
-
 # Python3 code to iterate over a list
 list = [1, 5, 3, 9, 12, 2, 7, 4, 8, 10, 6, 11]
   
@@ -20,4 +19,4 @@ while i < length:
     
     m = (y1-y2)/(x1-x2)
     b = (x1*y2-y1*x2)/(x1-x2)
-    print ('point 1: (',x1,',',y1,') point 2:(',x2,',',y2,') Equation: y =',m, 'x +', b)
+    print 'point 1: (' + str(x1) + ',' + str(y1) + ') point 2:(' + str(x2) + ',' + str(y2) + ') Equation: y =' + str(m) + 'x +' + str(b)
