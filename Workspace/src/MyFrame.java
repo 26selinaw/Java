@@ -1,7 +1,4 @@
 import java.awt.FlowLayout;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.geom.Line2D;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -28,9 +25,5 @@ public class MyFrame {
 
 
 
-    }
-    public void paint(Graphics gp) { super.paint(gp); Graphics2D graphics = (Graphics2D) gp;
-        Line2D line = new Line2D.Float(200, 150, 150, 220);
-        graphics.draw(line);
     }
 }
