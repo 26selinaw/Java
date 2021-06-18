@@ -4,26 +4,46 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JLine;
+import java.awt.Canvas;
+import java.awt.Color;
+import java.awt.Graphics;
+import javax.swing.JFrame;
+import java.awt.geom.Line2D;
+import java.awt.Graphics2D;
 
-public class MyFrame {
+public class MyFrame extends JFrame {
+    public MyFrame(){
+        JPanel panel=new JPanel();
+        getContentPane().add(panel);
+        setSize(600, 600);
+
+    }
+
+    public void paint(Graphics g) {
+        // g.setColor(new Color(255, 0, 0));
+        Graphics2D g2 = (Graphics2D) g;
+        g.translate(300, 300);
+        Line2D lin = new Line2D.Float(-300, 0, 300, 0);
+        Line2D line = new Line2D.Float (0, 300, 0, -300);
+        g2.draw(lin);
+        g2.draw(line);
+
+        for (int x = -300; x < 600; x++) {
+            if (x!=0) {
+                //int y = (int)((x*x) + (1.0/x));
+                int y = (int)(1.0/x);
+                g2.drawOval(x, -y / 10, 3, 3);
+                g2.fillOval(x, -y / 10, 3, 3);
+            }
+        }
+        
+    }
+
     public static void main(String s[]) {
         JFrame frame = new JFrame("Graph");
-        JPanel panel = new JPanel();
-        panel.setLayout(new FlowLayout());
         JLabel label = new JLabel("Graph");
-
-
-        //JButton button = new JButton();
-        //button.setText("Button");
-        panel.add(label);
-        //panel.add(button);
-        frame.add(panel);
-        frame.setSize(600, 600);
-        frame.setLocationRelativeTo(null);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
-
-
-
+        
+        MyFrame my = new MyFrame();
+        my.setVisible(true);
     }
 }
