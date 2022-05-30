@@ -36,7 +36,7 @@ git commit -m "some message you want to add"
 Push the commit to the Github
 
 ```shell
-git push origin master
+git push origin main
 ```
 
 Check history
